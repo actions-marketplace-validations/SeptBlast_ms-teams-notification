@@ -1,11 +1,8 @@
-<p align="center">
-  <a href="https://github.com/jdcargile/ms-teams-notification/actions"><img alt="ms-teams-notification status" src="https://github.com/jdcargile/ms-teams-notification/workflows/Build%20&%20Test/badge.svg"></a>
-</p>
-
-[![Build & Test](https://github.com/SeptBlast/ms-teams-notification/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/SeptBlast/ms-teams-notification/actions/workflows/test.yml)
-
 # Microsoft Teams Notification 
 A GitHub Action that sends customizable notifications to a dedicated Microsoft Teams channel.
+
+### Build and Test Status
+[![Build & Test](https://github.com/SeptBlast/ms-teams-notification/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/SeptBlast/ms-teams-notification/actions/workflows/test.yml)
 
 ## Usage
 1. Add `MS_TEAMS_WEBHOOK_URI` on your repository's configs on Settings > Secrets. It is the [Webhook URI](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook) of the dedicated Microsoft Teams channel for notification.
@@ -25,7 +22,7 @@ jobs:
       - uses: actions/checkout@v2
       # this is the new step using the ms-teams-notification action
       - name: Notify dedicated teams channel
-        uses: jdcargile/ms-teams-notification@v1.3
+        uses: septblast/ms-teams-notification@v1.3
         with:
           github-token: ${{ github.token }} # this will use the runner's token.
           ms-teams-webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
