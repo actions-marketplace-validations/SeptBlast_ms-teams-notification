@@ -2,6 +2,8 @@
   <a href="https://github.com/jdcargile/ms-teams-notification/actions"><img alt="ms-teams-notification status" src="https://github.com/jdcargile/ms-teams-notification/workflows/Build%20&%20Test/badge.svg"></a>
 </p>
 
+[![Build & Test](https://github.com/SeptBlast/ms-teams-notification/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/SeptBlast/ms-teams-notification/actions/workflows/test.yml)
+
 # Microsoft Teams Notification 
 A GitHub Action that sends customizable notifications to a dedicated Microsoft Teams channel.
 
@@ -48,7 +50,7 @@ As you can see below, the `notification-summary` and `notification-color` are be
 </p>
 
 ### Emojis
-Emoji support isn't great for incoming webhooks on Microsoft Teams yet. You can hack your way through it using HEX codes. For example, in `notification-summary` I used `Emojify! &#x1F6A2​​ &#x2705;` for the following screenshot. HEX codes for emojis [here](https://apps.timwhitlock.info/emoji/tables/unicode). 
+Emoji support isn't great for incoming webhooks on Microsoft Teams yet. You can hack your way through it using HEX codes. For example, in `notification-summary` I used `Emojify! &#x1F6A2   &#x2705;` for the following screenshot. HEX codes for emojis [here](https://apps.timwhitlock.info/emoji/tables/unicode). 
 
 <p align="center">
 <img src="notification-emoji-screenshot.png">
