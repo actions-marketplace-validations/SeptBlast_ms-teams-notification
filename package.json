@@ -10,7 +10,7 @@
         "format-check": "prettier --check **/*.ts",
         "pack": "ncc build",
         "set-node-options": "export NODE_OPTIONS=--openssl-legacy-provider",
-        "all": "npm run set-node-options && npm run build && npm run format && npm run pack"
+        "all": "npm run build && npm run format && npm run pack"
     },
     "repository": {
         "type": "git",
